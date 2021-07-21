@@ -1,0 +1,9 @@
+{
+	"applications": {},
+	"bootstrapPlugins": {
+		"FLPDemoApp1": {
+			"component": "com.eric.pushnotifications",
+			"url": "../../../../../"
+		}
+	}
+}

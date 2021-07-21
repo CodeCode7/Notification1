@@ -1,0 +1,27 @@
+{
+  "run": [
+    {
+      "filePath": "/fioriSandboxConfig.json",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [
+        {
+          "paramName": "",
+          "paramValue": ""
+        }
+      ],
+      "hashParameter": "#Shell-home",
+      "backendSystem": [],
+      "_metadata": {
+        "id": 9914966,
+        "runnerId": "fiorirunner",
+        "displayName": "Run Sandbox",
+        "lastRunTimeStamp": 1563457570610
+      }
+    }
+  ]
+}

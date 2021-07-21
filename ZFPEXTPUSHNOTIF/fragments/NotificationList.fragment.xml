@@ -1,0 +1,32 @@
+<core:FragmentDefinition
+  xmlns="sap.m"
+  xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    xmlns:mvc="sap.ui.core.mvc">
+    <ResponsivePopover id="popover"
+    title="Notifications"
+    showHeader="true"
+    placement="Bottom"
+    class="sapUiPopupWithPadding">
+    <beginButton>
+      <Button id="viewall" text="View All ..." press="onPress" />
+    </beginButton>
+      <content>
+      <List id="notiList" busyIndicatorDelay="0"
+          class="sapContrast sapContrastPlus"
+          width="auto"
+          items="{path: '/PUSH_NOTIFSet',
+            length : 5,
+            filters : [{ path : 'ReadFlg', operator : 'EQ', value1 : ''}],
+            templateShareable : 'true'
+              }">
+          <items>
+          <NotificationListItem id="notilistItem" title="{NotifTxt}"
+            showCloseButton="false" datetime="{path: 'Createdat', type: 'sap.ui.model.type.DateTime',formatOptions: { style: 'medium', strictParsing: true, relative: true }}"
+            unread="true" close="onItemClose"   press="onListItemPress" busyIndicatorDelay="0" />
+          </items>
+
+      </List>
+  </content>
+  </ResponsivePopover>
+</core:FragmentDefinition>

@@ -1,0 +1,6 @@
+{
+  "deploy": {
+    "destination": "Gateway_NWG",
+    "name": "ZFPEXTPUSHNOTIF"
+  }
+}
